@@ -3,7 +3,8 @@ extends Node2D
 @onready var player = $CharacterBody2D # Assuming your Player node is named "Player"
 var current_wall = null # Track the current wall
 
-const walls_array = ["res://assets/walls/wall_hoh.png"]
+const walls_array = ["res://assets/walls/wall_hoh.png", "res://assets/walls/wall_down.png", "res://assets/walls/wall_rdown_lup.png", "res://assets/walls/wall_rout_ldown.png",
+					"res://assets/walls/wall_rup_lout.png", "res://assets/walls/wall_tpose.png"]
 
 func _ready():
 	# Get ready now, so the signals connect
