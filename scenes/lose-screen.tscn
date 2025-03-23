@@ -55,6 +55,7 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_honml")
 
 [node name="HomeButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 484.0
 offset_top = 473.0
 offset_right = 667.0

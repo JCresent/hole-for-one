@@ -3,7 +3,10 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	# Reset all of these for next round
+	Global.score = 0
+	Global.scale_speed = 10
+	Global.vertical_speed = 20
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
