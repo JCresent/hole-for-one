@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bovk617enkdpx"
-path="res://.godot/imported/background_menu.png-06b8eec82480cc13050be5cf18abacc9.ctex"
+uid="uid://cphg8kvum1p41"
+path="res://.godot/imported/lose_screen.png-f6fb36e006e6ae9fb2c8cffeea0ba224.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/background_menu.png"
-dest_files=["res://.godot/imported/background_menu.png-06b8eec82480cc13050be5cf18abacc9.ctex"]
+source_file="res://assets/screens/lose_screen.png"
+dest_files=["res://.godot/imported/lose_screen.png-f6fb36e006e6ae9fb2c8cffeea0ba224.ctex"]
 
 [params]
 
