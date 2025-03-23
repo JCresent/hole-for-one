@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhjuksnlmoi81"]
+
+[ext_resource type="Script" path="res://scripts/wall.gd" id="1_oysj8"]
+[ext_resource type="Texture2D" uid="uid://bovk617enkdpx" path="res://assets/screens/background_menu.png" id="2_b76jo"]
+
+[node name="Node2D" type="StaticBody2D"]
+position = Vector2(574, 69)
+script = ExtResource("1_oysj8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+show_behind_parent = true
+texture_filter = 1
+position = Vector2(58, 44)
+scale = Vector2(1.76563, 1.55469)
+texture = ExtResource("2_b76jo")
+offset = Vector2(-32, -32)
