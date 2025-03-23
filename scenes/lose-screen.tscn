@@ -54,7 +54,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_honml")
 
-[node name="Button" type="Button" parent="."]
+[node name="HomeButton" type="Button" parent="."]
 offset_left = 484.0
 offset_top = 473.0
 offset_right = 667.0
@@ -71,7 +71,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_dmu2j")
 theme_override_styles/normal = SubResource("StyleBoxFlat_8xdse")
 text = "HOME"
 
-[node name="Label" type="Label" parent="."]
+[node name="YouLose" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -89,4 +89,17 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 120
 text = "You lose"
 
-[connection signal="pressed" from="Button" to="." method="_on_home_pressed"]
+[node name="FinalScore" type="Label" parent="."]
+layout_mode = 0
+offset_left = 349.0
+offset_top = 553.0
+offset_right = 834.0
+offset_bottom = 636.0
+theme_override_colors/font_color = Color(0.741176, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Final Score"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="HomeButton" to="." method="_on_home_pressed"]

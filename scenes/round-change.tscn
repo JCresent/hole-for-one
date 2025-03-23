@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcgsbrykin516"]
+
+[ext_resource type="Script" path="res://scripts/round_change.gd" id="1_1l70u"]
+[ext_resource type="Texture2D" uid="uid://bw3ycx22kv5nk" path="res://assets/stage/orange.png" id="1_s38ib"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uf0wj"]
+texture = ExtResource("1_s38ib")
+
+[node name="Round-change" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1l70u")
+
+[node name="Panel" type="Panel" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_uf0wj")
+
+[node name="Round" type="Label" parent="."]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 243.0
+offset_right = 1034.0
+offset_bottom = 387.0
+theme_override_colors/font_color = Color(0.31802, 0.31802, 0.31802, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 5
+theme_override_font_sizes/font_size = 120
+text = "Round "
+horizontal_alignment = 1
+vertical_alignment = 1
