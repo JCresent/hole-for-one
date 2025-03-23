@@ -224,16 +224,16 @@ tile_set = SubResource("TileSet_g36d5")
 [node name="Wall" parent="." instance=ExtResource("11_22va7")]
 position = Vector2(585, 75)
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="Player" type="CharacterBody2D" parent="."]
 top_level = true
 script = ExtResource("10_qwgiv")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
 texture_filter = 1
 position = Vector2(581, 361)
 scale = Vector2(3, 3)
 texture = ExtResource("10_qlcib")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player"]
 visible = false
 polygon = PackedVector2Array(569, 295, 550, 310, 554, 331, 572, 344, 572, 355, 564, 353, 564, 386, 575, 386, 572, 425, 586, 425, 586, 387, 596, 387, 595, 356, 584, 353, 590, 340, 609, 323, 610, 311, 590, 294)

@@ -1,13 +1,19 @@
 extends Node2D
 
-@onready var player = $CharacterBody2D # Assuming your Player node is named "Player"
+@onready var player = $Player/Sprite2D # Assuming your Player node is named "Player"
 var current_wall = null # Track the current wall
 
 const walls_array = ["res://assets/walls/wall_hoh.png", "res://assets/walls/wall_down.png", "res://assets/walls/wall_rdown_lup.png", "res://assets/walls/wall_rout_ldown.png",
 					"res://assets/walls/wall_rup_lout.png", "res://assets/walls/wall_tpose.png"]
+					
+const hole_pose = {"res://assets/walls/wall_hoh.png":"res://assets/sprites/sm-hands-on-head.png", "res://assets/walls/wall_down.png":"res://assets/sprites/sm-down.png", 
+					"res://assets/walls/wall_rdown_lup.png":"res://assets/sprites/sm-loneup-ronedown.png", "res://assets/walls/wall_rout_ldown.png":"res://assets/sprites/sm-ronet-lonedown.png",
+					"res://assets/walls/wall_rup_lout.png":"res://assets/sprites/sm-rup-lout.png", "res://assets/walls/wall_tpose.png":"res://assets/sprites/sm-tpose.png"}
+					
+var round = 1
+var wall_counter = 0
 
 func _ready():
-	# Get ready now, so the signals connect
 	spawn_wall()
 
 func spawn_wall():
@@ -47,4 +53,11 @@ func queue_free_current_wall():
 	current_wall.queue_free()
 
 func check_pose() -> bool:
-	return true
+	var hole = current_wall.get_node("Sprite2D").texture.resource_path
+	var position = player.texture.resource_path
+	
+	if hole_pose[hole] == position:
+		return true
+	return false 
+	
+	
